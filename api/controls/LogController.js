@@ -17,7 +17,7 @@ module.exports = {
     )
       .then((data) => {
         res.status(200).send({
-          message: "Cập nhật thành công",
+          message: "Lưu thành công",
         });
       })
       .catch((err) => {
