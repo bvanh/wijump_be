@@ -4,14 +4,14 @@ const sequelize = require("sequelize");
 const attributesCharges = ["data"];
 module.exports = {
   saveConfig: async (req, res, next) => {
-    const { id, config } = req.body;
+    const { config } = req.body;
     Config.update(
       {
         data: config,
       },
       {
         where: {
-          map_id: id,
+          map_id: 1,
         },
       }
     )
