@@ -6,4 +6,5 @@ let api = require("./controls/LogController");
 module.exports = function (app) {
   // app.route("/login").post(logApi.login);
   app.route("/save").post(api.saveConfig);
+  app.route("/get").get(api.getConfig);
 };

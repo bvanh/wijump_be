@@ -3,7 +3,7 @@ let express = require("express");
 let cors = require("cors");
 let bodyparser = require("body-parser");
 let routes = require("./routers");
-let port = process.env.PORT;
+let port = 3006;
 
 //server config
 const dbService = require("./services/db.services");
